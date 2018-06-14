@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
+    'snippets.apps.SnippetsConfig',
     'polls.apps.PollsConfig',
     'login.apps.LoginConfig',
     'django.contrib.admin',
