@@ -1,4 +1,5 @@
 from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
 
 from . import views
 
@@ -11,3 +12,6 @@ urlpatterns = [
     path('<int:pk>/', views.snippet_detail, name='detail'),
 
 ]
+
+# 添加可选的格式后缀
+urlpatterns = format_suffix_patterns(urlpatterns)
