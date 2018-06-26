@@ -7,9 +7,9 @@ app_name = 'snippets'
 urlpatterns = [
     # ex:snippets/
     # name 属性可以让你在模板 中用 {% url %} 引用避免写死
-    path('', views.Snippet_List.as_view(), name='index'),
+    path('', views.SnippetList.as_view(), name='index'),
     # ex:snippets/5/
-    path('<int:pk>/', views.Snippet_Detail.as_view(), name='detail'),
+    path('<int:pk>/', views.SnippetDetail.as_view(), name='detail'),
 
 ]
 
